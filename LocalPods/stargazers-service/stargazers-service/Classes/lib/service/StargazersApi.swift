@@ -6,7 +6,7 @@ import Foundation
 
 public class StargazersApi {
 
-    public let instance = StargazersApi()
+    public static let instance = StargazersApi()
 
     init () {}
 
