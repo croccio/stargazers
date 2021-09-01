@@ -15,6 +15,9 @@
 		411EC91226E01BB500A95010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411EC91026E01BB500A95010 /* LaunchScreen.storyboard */; };
 		411EC91D26E01BB600A95010 /* StargazersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EC91C26E01BB600A95010 /* StargazersTests.swift */; };
 		411EC92826E01BB600A95010 /* StargazersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EC92726E01BB600A95010 /* StargazersUITests.swift */; };
+		6457B01AEBA71FF0CD4394CF /* Pods_Stargazers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D4A431F2B1A2B10C13187B /* Pods_Stargazers.framework */; };
+		D543D9EE696F2D7D5AAC6A4A /* Pods_StargazersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42692109530E27BA17F648A3 /* Pods_StargazersTests.framework */; };
+		DA1975D353F6A74F9F129338 /* Pods_Stargazers_StargazersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68A04F4E70E5CFC3C105DF8 /* Pods_Stargazers_StargazersUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091833309FBBC5ACBBF82983 /* Pods-StargazersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazersTests.release.xcconfig"; path = "Target Support Files/Pods-StargazersTests/Pods-StargazersTests.release.xcconfig"; sourceTree = "<group>"; };
 		411EC90226E01BB400A95010 /* Stargazers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargazers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411EC90526E01BB400A95010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		411EC90726E01BB400A95010 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		411EC92326E01BB600A95010 /* StargazersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		411EC92726E01BB600A95010 /* StargazersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersUITests.swift; sourceTree = "<group>"; };
 		411EC92926E01BB600A95010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42692109530E27BA17F648A3 /* Pods_StargazersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargazersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E3934FFB7012040C3F884D /* Pods-Stargazers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazers.release.xcconfig"; path = "Target Support Files/Pods-Stargazers/Pods-Stargazers.release.xcconfig"; sourceTree = "<group>"; };
+		7C41656B0F57AF3B0ED6C797 /* Pods-Stargazers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazers.debug.xcconfig"; path = "Target Support Files/Pods-Stargazers/Pods-Stargazers.debug.xcconfig"; sourceTree = "<group>"; };
+		81BBA7E35B4877974054F937 /* Pods-StargazersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StargazersTests.debug.xcconfig"; path = "Target Support Files/Pods-StargazersTests/Pods-StargazersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C017378AB15E5D137067A2DE /* Pods-Stargazers-StargazersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazers-StargazersUITests.debug.xcconfig"; path = "Target Support Files/Pods-Stargazers-StargazersUITests/Pods-Stargazers-StargazersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7D4A431F2B1A2B10C13187B /* Pods_Stargazers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stargazers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E969B13E7700C02077961AD6 /* Pods-Stargazers-StargazersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazers-StargazersUITests.release.xcconfig"; path = "Target Support Files/Pods-Stargazers-StargazersUITests/Pods-Stargazers-StargazersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F68A04F4E70E5CFC3C105DF8 /* Pods_Stargazers_StargazersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stargazers_StargazersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6457B01AEBA71FF0CD4394CF /* Pods_Stargazers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D543D9EE696F2D7D5AAC6A4A /* Pods_StargazersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1975D353F6A74F9F129338 /* Pods_Stargazers_StargazersUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				411EC91B26E01BB600A95010 /* StargazersTests */,
 				411EC92626E01BB600A95010 /* StargazersUITests */,
 				411EC90326E01BB400A95010 /* Products */,
+				DED27A645E5D15704CEB1194 /* Pods */,
+				B61772B6FF63B45AF097BB85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = StargazersUITests;
 			sourceTree = "<group>";
 		};
+		B61772B6FF63B45AF097BB85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7D4A431F2B1A2B10C13187B /* Pods_Stargazers.framework */,
+				F68A04F4E70E5CFC3C105DF8 /* Pods_Stargazers_StargazersUITests.framework */,
+				42692109530E27BA17F648A3 /* Pods_StargazersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DED27A645E5D15704CEB1194 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C41656B0F57AF3B0ED6C797 /* Pods-Stargazers.debug.xcconfig */,
+				59E3934FFB7012040C3F884D /* Pods-Stargazers.release.xcconfig */,
+				C017378AB15E5D137067A2DE /* Pods-Stargazers-StargazersUITests.debug.xcconfig */,
+				E969B13E7700C02077961AD6 /* Pods-Stargazers-StargazersUITests.release.xcconfig */,
+				81BBA7E35B4877974054F937 /* Pods-StargazersTests.debug.xcconfig */,
+				091833309FBBC5ACBBF82983 /* Pods-StargazersTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 411EC92C26E01BB600A95010 /* Build configuration list for PBXNativeTarget "Stargazers" */;
 			buildPhases = (
+				ED30F38FF145F7ECA6BBCDDA /* [CP] Check Pods Manifest.lock */,
 				411EC8FE26E01BB400A95010 /* Sources */,
 				411EC8FF26E01BB400A95010 /* Frameworks */,
 				411EC90026E01BB400A95010 /* Resources */,
+				AE5B861774305A22058804AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 411EC92F26E01BB600A95010 /* Build configuration list for PBXNativeTarget "StargazersTests" */;
 			buildPhases = (
+				112D1BE13B4EDCD33F2089AF /* [CP] Check Pods Manifest.lock */,
 				411EC91426E01BB600A95010 /* Sources */,
 				411EC91526E01BB600A95010 /* Frameworks */,
 				411EC91626E01BB600A95010 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 411EC93226E01BB600A95010 /* Build configuration list for PBXNativeTarget "StargazersUITests" */;
 			buildPhases = (
+				4141F99901A4253CDDB54C3D /* [CP] Check Pods Manifest.lock */,
 				411EC91F26E01BB600A95010 /* Sources */,
 				411EC92026E01BB600A95010 /* Frameworks */,
 				411EC92126E01BB600A95010 /* Resources */,
+				91AD4ECD3D981F0187C899A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		112D1BE13B4EDCD33F2089AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StargazersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4141F99901A4253CDDB54C3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stargazers-StargazersUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91AD4ECD3D981F0187C899A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stargazers-StargazersUITests/Pods-Stargazers-StargazersUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stargazers-StargazersUITests/Pods-Stargazers-StargazersUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stargazers-StargazersUITests/Pods-Stargazers-StargazersUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE5B861774305A22058804AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stargazers/Pods-Stargazers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stargazers/Pods-Stargazers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stargazers/Pods-Stargazers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED30F38FF145F7ECA6BBCDDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stargazers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		411EC8FE26E01BB400A95010 /* Sources */ = {
@@ -433,6 +582,7 @@
 		};
 		411EC92D26E01BB600A95010 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C41656B0F57AF3B0ED6C797 /* Pods-Stargazers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +601,7 @@
 		};
 		411EC92E26E01BB600A95010 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E3934FFB7012040C3F884D /* Pods-Stargazers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +620,7 @@
 		};
 		411EC93026E01BB600A95010 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81BBA7E35B4877974054F937 /* Pods-StargazersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +642,7 @@
 		};
 		411EC93126E01BB600A95010 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091833309FBBC5ACBBF82983 /* Pods-StargazersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +664,7 @@
 		};
 		411EC93326E01BB600A95010 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C017378AB15E5D137067A2DE /* Pods-Stargazers-StargazersUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +684,7 @@
 		};
 		411EC93426E01BB600A95010 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E969B13E7700C02077961AD6 /* Pods-Stargazers-StargazersUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -2,10 +2,15 @@
 # platform :ios, '9.0'
 
 target 'Stargazers' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for Stargazers
+  
+  pod 'RxSwift', '6.2.0'
+  pod 'RxCocoa', '6.2.0'
+  
+  # Local Pods
+  pod 'stargazers-service', :path => './LocalPods/stargazers-service'
 
   target 'StargazersTests' do
     inherit! :search_paths

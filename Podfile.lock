@@ -1,0 +1,35 @@
+PODS:
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - stargazers-service (0.1.0):
+    - RxCocoa (= 6.2.0)
+    - RxSwift (= 6.2.0)
+
+DEPENDENCIES:
+  - RxCocoa (= 6.2.0)
+  - RxSwift (= 6.2.0)
+  - stargazers-service (from `./LocalPods/stargazers-service`)
+
+SPEC REPOS:
+  trunk:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+EXTERNAL SOURCES:
+  stargazers-service:
+    :path: "./LocalPods/stargazers-service"
+
+SPEC CHECKSUMS:
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  stargazers-service: ce04b14745ae44ed5f1a28c44816339e1fe77a72
+
+PODFILE CHECKSUM: 3bff740e79a2ba815b86f300b047ed406e79679f
+
+COCOAPODS: 1.11.0
