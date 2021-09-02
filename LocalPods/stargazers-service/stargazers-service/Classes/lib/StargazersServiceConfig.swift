@@ -32,7 +32,7 @@ public class StargazersRequest {
         let url = URL(string: service.url)!
         var request = URLRequest(url: url)
         request.httpMethod = service.type.rawValue
-        
+
         if let body = service.body {
             request.httpBody = body.data(using: .utf8)
         }

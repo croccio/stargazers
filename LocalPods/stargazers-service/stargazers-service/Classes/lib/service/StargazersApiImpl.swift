@@ -3,12 +3,13 @@
 //
 
 import Foundation
+import RxSwift
 
-public class StargazersApi {
-
-    public static let instance = StargazersApi()
+class StargazersApiImpl: StargazersApi {
 
     init () {}
-
+    
+    
+    
 
 }
