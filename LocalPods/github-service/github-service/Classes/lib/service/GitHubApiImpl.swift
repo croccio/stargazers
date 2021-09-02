@@ -5,8 +5,11 @@
 import Foundation
 import RxSwift
 
+class GitHubApiImpl: GitHubApi {
 
-public protocol StargazersApi {
-
+    init () {}
     
+    
+    
+
 }

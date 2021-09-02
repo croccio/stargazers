@@ -4,7 +4,7 @@
 
 import Foundation
 
-public struct StargazersServiceConfig {
+public struct GitHubServiceConfig {
 
     static let BASE_URL = "https://api.github.com"
 

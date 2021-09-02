@@ -5,11 +5,8 @@
 import Foundation
 import RxSwift
 
-class StargazersApiImpl: StargazersApi {
 
-    init () {}
-    
-    
-    
+public protocol GitHubApi {
 
+    
 }

@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'stargazers-service'
+  s.name             = 'github-service'
   s.version          = '0.1.0'
-  s.summary          = 'Stargazers api'
+  s.summary          = 'Github api'
 
 
 s.description      = <<-DESC
@@ -23,7 +23,7 @@ Stargazer rest api
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'stargazers-service/**/*'
+  s.source_files = 'github-service/**/*'
 
   s.dependency 'RxSwift', '6.2.0'
   s.dependency 'RxCocoa', '6.2.0'
