@@ -25,8 +25,7 @@ public enum ServiceType: String {
          DELETE = "DELETE"
 }
 
-
-public class StargazersRequest {
+public class GitHubRequest {
 
     public static func getRequest(service: BaseService) -> URLRequest {
         let url = URL(string: service.url)!
