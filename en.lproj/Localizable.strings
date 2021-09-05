@@ -1,0 +1,12 @@
+/* 
+  localizable.strings
+  Stargazers
+
+  Created by Antonio Scardigno on 05/09/21.
+  
+*/
+"error_general_message" = "General error";
+"error_stargazer_not_saved_exception" = "Cannot cache stargazers";
+"error_stargazer_not_cached_exception" = "No cached data. Please enabled data to load stargazers";
+"alert_title_error" = "Error";
+"ok" = "Ok";

@@ -22,6 +22,7 @@
 		4156ED2626E544D800BF25DD /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156ED2526E544D800BF25DD /* StringExt.swift */; };
 		4156ED2826E5465500BF25DD /* ErrorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156ED2726E5465500BF25DD /* ErrorExt.swift */; };
 		4156ED2F26E55AE500BF25DD /* AvatarLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156ED2E26E55AE400BF25DD /* AvatarLoader.swift */; };
+		4156ED3626E564C100BF25DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4156ED3826E564C100BF25DD /* Localizable.strings */; };
 		6457B01AEBA71FF0CD4394CF /* Pods_Stargazers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D4A431F2B1A2B10C13187B /* Pods_Stargazers.framework */; };
 		D543D9EE696F2D7D5AAC6A4A /* Pods_StargazersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42692109530E27BA17F648A3 /* Pods_StargazersTests.framework */; };
 		DA1975D353F6A74F9F129338 /* Pods_Stargazers_StargazersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68A04F4E70E5CFC3C105DF8 /* Pods_Stargazers_StargazersUITests.framework */; };
@@ -67,6 +68,7 @@
 		4156ED2526E544D800BF25DD /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		4156ED2726E5465500BF25DD /* ErrorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExt.swift; sourceTree = "<group>"; };
 		4156ED2E26E55AE400BF25DD /* AvatarLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarLoader.swift; sourceTree = "<group>"; };
+		4156ED3726E564C100BF25DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		42692109530E27BA17F648A3 /* Pods_StargazersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargazersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E3934FFB7012040C3F884D /* Pods-Stargazers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazers.release.xcconfig"; path = "Target Support Files/Pods-Stargazers/Pods-Stargazers.release.xcconfig"; sourceTree = "<group>"; };
 		7C41656B0F57AF3B0ED6C797 /* Pods-Stargazers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazers.debug.xcconfig"; path = "Target Support Files/Pods-Stargazers/Pods-Stargazers.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		411EC90426E01BB400A95010 /* Stargazers */ = {
 			isa = PBXGroup;
 			children = (
+				4156ED3826E564C100BF25DD /* Localizable.strings */,
 				4156ED3026E55B1800BF25DD /* utils */,
 				4156ED2426E544CB00BF25DD /* extensions */,
 				4156ED2126E5200F00BF25DD /* config */,
@@ -336,6 +339,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = 411EC8F926E01BB400A95010;
 			productRefGroup = 411EC90326E01BB400A95010 /* Products */;
@@ -355,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411EC91226E01BB500A95010 /* LaunchScreen.storyboard in Resources */,
+				4156ED3626E564C100BF25DD /* Localizable.strings in Resources */,
 				411EC90F26E01BB500A95010 /* Assets.xcassets in Resources */,
 				411EC90D26E01BB400A95010 /* Main.storyboard in Resources */,
 			);
@@ -562,6 +567,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		4156ED3826E564C100BF25DD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4156ED3726E564C100BF25DD /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -569,6 +582,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -630,6 +644,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
