@@ -16,8 +16,8 @@ class SearchStargazersViewModel: NSObject, ViewModelProtocol {
     var error: ((Error) -> Void)?
     
     var loading = BehaviorRelay<Bool>(value: false)
-    var owner = BehaviorRelay<String?>(value: "croccio")
-    var repository = BehaviorRelay<String?>(value: "Android-Auto-Store")
+    var owner = BehaviorRelay<String?>(value: "")
+    var repository = BehaviorRelay<String?>(value: "")
     var stargazers = BehaviorRelay<Array<Stargazer>>(value: [])
     
     required override init() { }
