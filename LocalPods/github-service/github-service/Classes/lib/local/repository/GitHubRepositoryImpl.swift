@@ -1,0 +1,37 @@
+//
+// Created by Antonio Scardigno on 2021-09-01.
+//
+
+import Foundation
+import RxSwift
+import RxCocoa
+
+class GitHubRepositoryImpl: GitHubRepository {
+    
+    private let gitHubRestApi: GitHubApi
+    private let gitHubStorage: GitHubStorage
+    
+    init (gitHubRestApi: GitHubApi, gitHubStorage: GitHubStorage) {
+        self.gitHubRestApi = gitHubRestApi
+        self.gitHubStorage = gitHubStorage
+    }
+    
+    func getStargazers(owner: String, repo: String, page: Int, perPage: Int) -> Observable<Array<Stargazer>> {
+        return gitHubRestApi
+            .getStargazers(serviceConfig: GitHubApiConfig.StargazersService(owner: owner, repo: repo, perPage: perPage, page: page))
+            .observe(on: MainScheduler.instance)
+            .flatMap({ (stargazersApi: Array<StargazerApi>) -> Observable<Array<Stargazer>> in
+                let localStargazers = stargazersApi.map { stargazerApi in
+                    return Stargazer(avatarUrl: stargazerApi.avatar_url, login: stargazerApi.login, repo: Repo(owner: owner, repo: repo))
+                }
+                
+                return self.gitHubStorage.addStargazers(stargazers: localStargazers)
+            })
+            .catch { _ in
+                return self.gitHubStorage.getStargazers(repo: Repo(owner: owner, repo: repo), page: page, perPage: perPage)
+            }
+        
+    }
+    
+
+}
