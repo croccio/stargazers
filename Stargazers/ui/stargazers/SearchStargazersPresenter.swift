@@ -45,12 +45,12 @@ class SearchStargazersPresenter: BasePresenter<SearchStargazersViewModel> {
         }
         
         guard let owner = viewModel?.owner.value, owner.count > 0 else {
-            viewModel?.error?(SearchStargazersError(message: "error_insert_owner"))
+            viewModel?.error?(SearchStargazersError(message: "error_insert_owner".localized()))
             return nil
         }
         
         guard let repository = viewModel?.repository.value, repository.count > 0 else {
-            viewModel?.error?(SearchStargazersError(message: "error_inser_repository"))
+            viewModel?.error?(SearchStargazersError(message: "error_inser_repository".localized()))
             return nil
         }
         

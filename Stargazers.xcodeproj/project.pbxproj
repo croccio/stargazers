@@ -13,7 +13,6 @@
 		411EC90F26E01BB500A95010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411EC90E26E01BB500A95010 /* Assets.xcassets */; };
 		411EC91226E01BB500A95010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411EC91026E01BB500A95010 /* LaunchScreen.storyboard */; };
 		411EC91D26E01BB600A95010 /* StargazersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EC91C26E01BB600A95010 /* StargazersTests.swift */; };
-		411EC92826E01BB600A95010 /* StargazersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411EC92726E01BB600A95010 /* StargazersUITests.swift */; };
 		4156ED1B26E5177200BF25DD /* SearchStargazersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156ED1826E5177200BF25DD /* SearchStargazersPresenter.swift */; };
 		4156ED1C26E5177200BF25DD /* SearchStargazersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156ED1926E5177200BF25DD /* SearchStargazersViewController.swift */; };
 		4156ED1D26E5177200BF25DD /* SearchStargazersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156ED1A26E5177200BF25DD /* SearchStargazersViewModel.swift */; };
@@ -23,6 +22,8 @@
 		4156ED2826E5465500BF25DD /* ErrorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156ED2726E5465500BF25DD /* ErrorExt.swift */; };
 		4156ED2F26E55AE500BF25DD /* AvatarLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156ED2E26E55AE400BF25DD /* AvatarLoader.swift */; };
 		4156ED3626E564C100BF25DD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4156ED3826E564C100BF25DD /* Localizable.strings */; };
+		4156ED3E26E56A0200BF25DD /* SearchStargazersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156ED3D26E56A0200BF25DD /* SearchStargazersUITests.swift */; };
+		4156ED4026E570B100BF25DD /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4156ED2526E544D800BF25DD /* StringExt.swift */; };
 		6457B01AEBA71FF0CD4394CF /* Pods_Stargazers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D4A431F2B1A2B10C13187B /* Pods_Stargazers.framework */; };
 		D543D9EE696F2D7D5AAC6A4A /* Pods_StargazersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42692109530E27BA17F648A3 /* Pods_StargazersTests.framework */; };
 		DA1975D353F6A74F9F129338 /* Pods_Stargazers_StargazersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68A04F4E70E5CFC3C105DF8 /* Pods_Stargazers_StargazersUITests.framework */; };
@@ -58,7 +59,6 @@
 		411EC91C26E01BB600A95010 /* StargazersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersTests.swift; sourceTree = "<group>"; };
 		411EC91E26E01BB600A95010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		411EC92326E01BB600A95010 /* StargazersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		411EC92726E01BB600A95010 /* StargazersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersUITests.swift; sourceTree = "<group>"; };
 		411EC92926E01BB600A95010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4156ED1826E5177200BF25DD /* SearchStargazersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchStargazersPresenter.swift; path = Stargazers/ui/stargazers/SearchStargazersPresenter.swift; sourceTree = SOURCE_ROOT; };
 		4156ED1926E5177200BF25DD /* SearchStargazersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchStargazersViewController.swift; path = Stargazers/ui/stargazers/SearchStargazersViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -69,6 +69,7 @@
 		4156ED2726E5465500BF25DD /* ErrorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExt.swift; sourceTree = "<group>"; };
 		4156ED2E26E55AE400BF25DD /* AvatarLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarLoader.swift; sourceTree = "<group>"; };
 		4156ED3726E564C100BF25DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4156ED3D26E56A0200BF25DD /* SearchStargazersUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStargazersUITests.swift; sourceTree = "<group>"; };
 		42692109530E27BA17F648A3 /* Pods_StargazersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StargazersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E3934FFB7012040C3F884D /* Pods-Stargazers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazers.release.xcconfig"; path = "Target Support Files/Pods-Stargazers/Pods-Stargazers.release.xcconfig"; sourceTree = "<group>"; };
 		7C41656B0F57AF3B0ED6C797 /* Pods-Stargazers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stargazers.debug.xcconfig"; path = "Target Support Files/Pods-Stargazers/Pods-Stargazers.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,7 +159,7 @@
 		411EC92626E01BB600A95010 /* StargazersUITests */ = {
 			isa = PBXGroup;
 			children = (
-				411EC92726E01BB600A95010 /* StargazersUITests.swift */,
+				4156ED3D26E56A0200BF25DD /* SearchStargazersUITests.swift */,
 				411EC92926E01BB600A95010 /* Info.plist */,
 			);
 			path = StargazersUITests;
@@ -531,7 +532,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				411EC92826E01BB600A95010 /* StargazersUITests.swift in Sources */,
+				4156ED4026E570B100BF25DD /* StringExt.swift in Sources */,
+				4156ED3E26E56A0200BF25DD /* SearchStargazersUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
