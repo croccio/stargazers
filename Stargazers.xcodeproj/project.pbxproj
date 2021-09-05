@@ -199,6 +199,7 @@
 				411EC91426E01BB600A95010 /* Sources */,
 				411EC91526E01BB600A95010 /* Frameworks */,
 				411EC91626E01BB600A95010 /* Resources */,
+				BD4559A5140055134CFB1BC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,6 +377,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stargazers/Pods-Stargazers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD4559A5140055134CFB1BC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StargazersTests/Pods-StargazersTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StargazersTests/Pods-StargazersTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StargazersTests/Pods-StargazersTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED30F38FF145F7ECA6BBCDDA /* [CP] Check Pods Manifest.lock */ = {

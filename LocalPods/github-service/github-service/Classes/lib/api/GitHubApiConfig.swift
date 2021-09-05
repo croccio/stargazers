@@ -4,12 +4,25 @@
 
 import Foundation
 
-public struct GitHubServiceConfig {
+public struct GitHubApiConfig {
 
     static let BASE_URL = "https://api.github.com"
 
+    public struct StargazersService: BaseService {
+        public var type: ServiceType = .GET
+        public var url: String = "\(BASE_URL)/repos/%@/%@/stargazers"
+            .appending("?page=%d")
+            .appending("&per_page=%d")
+        public var body: String? = nil
+        
+        init(owner: String, repo: String, perPage: Int, page: Int) {
+            url = String(format: url, owner, repo, page, perPage)
+        }
+        
+        
+    }
+    
 }
-
 
 public protocol BaseService {
     var type: ServiceType { get }
@@ -25,7 +38,7 @@ public enum ServiceType: String {
          DELETE = "DELETE"
 }
 
-public class GitHubRequest {
+public class GitHubApiRequest {
 
     public static func getRequest(service: BaseService) -> URLRequest {
         let url = URL(string: service.url)!
