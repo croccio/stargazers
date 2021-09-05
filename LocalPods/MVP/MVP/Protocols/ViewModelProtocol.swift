@@ -7,5 +7,6 @@ import Foundation
 public protocol ViewModelProtocol: AnyObject {
  
     init()
-    
+ 
+    var error: ((Error) -> Void)? { get set }
 }

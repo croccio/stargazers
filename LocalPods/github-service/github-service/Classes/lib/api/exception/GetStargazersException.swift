@@ -6,9 +6,9 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class GetStargazersException: Error {
+public class GetStargazersException: Error {
     
-    let getStargazersError: GetStargazersError?
+    public let getStargazersError: GetStargazersError?
     
     init(getStargazersError: GetStargazersError) {
         self.getStargazersError = getStargazersError

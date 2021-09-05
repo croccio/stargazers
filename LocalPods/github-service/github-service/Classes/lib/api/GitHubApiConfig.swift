@@ -52,3 +52,8 @@ public class GitHubApiRequest {
         return request
     }
 }
+
+func isOfflineError(error: Error) -> Bool {
+    return (error as NSError).domain == NSURLErrorDomain &&
+        (error as NSError).code == -1009
+}

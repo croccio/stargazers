@@ -6,4 +6,4 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class StargazerNotSavedException: Error {}
+public class StargazerNotSavedException: Error {}

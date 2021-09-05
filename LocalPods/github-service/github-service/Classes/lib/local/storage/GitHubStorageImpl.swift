@@ -16,11 +16,19 @@ public class GitHubStorageImpl: GitHubStorage {
     public func getStargazers(repo: Repo, page: Int, perPage: Int) -> Observable<Array<Stargazer>> {
         
         let stargazers = Array(localStorage.objects(Stargazer.self).filter { stargazer in
-            stargazer.repo?.repo == repo.repo
+            stargazer.repo == repo
         })
+        
+        if (stargazers.count == 0) {
+            return Observable.error(NotCachedStargazerException())
+        }
         
         let startIndex = (page - 1) * perPage
         var endIndex = perPage * page
+        
+        if (startIndex > stargazers.count) {
+            return Observable.just([])
+        }
         
         if (endIndex > stargazers.count) {
             endIndex = stargazers.count

@@ -75,8 +75,6 @@ class GitHubApiTests: XCTestCase {
         }
         
         assert(stargazersError != nil, "Error handling doesn't work correctly")
-        assert(stargazersError is GetStargazersException, "Error is not GetStargazersError")
-        assert((stargazersError as? GetStargazersException)?.getStargazersError != nil, "Cannot get stargazersError")
         
     }
 

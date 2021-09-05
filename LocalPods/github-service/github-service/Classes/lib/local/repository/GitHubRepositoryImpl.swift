@@ -5,6 +5,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import Network
 
 public class GitHubRepositoryImpl: GitHubRepository {
     
@@ -27,8 +28,13 @@ public class GitHubRepositoryImpl: GitHubRepository {
                 
                 return self.gitHubStorage.addStargazers(stargazers: localStargazers)
             })
-            .catch { _ in
-                return self.gitHubStorage.getStargazers(repo: Repo(owner: owner, repo: repo), page: page, perPage: perPage)
+            .catch { error in
+                
+                if (isOfflineError(error: error)) {
+                    return self.gitHubStorage.getStargazers(repo: Repo(owner: owner, repo: repo), page: page, perPage: perPage)
+                } else {
+                    throw error
+                }
             }
         
     }

@@ -7,10 +7,10 @@
 
 import UIKit
 
-struct GetStargazersError: Codable {
+public struct GetStargazersError: Codable {
 
-    var message: String?
-    var documentation_url: String?
+    public var message: String?
+    public var documentation_url: String?
     
     init(message: String) {
         self.message = message
