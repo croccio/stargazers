@@ -82,7 +82,7 @@ class SearchStargazersUITests: XCTestCase {
         searchSearchButton.tap()
         
         addUIInterruptionMonitor(withDescription: "error_insert_owner".localized()) { (alert) -> Bool in
-          alert.buttons["Ok"].tap()
+            alert.buttons["ok".localized()].tap()
           return true
         }
     }
@@ -96,7 +96,7 @@ class SearchStargazersUITests: XCTestCase {
         searchSearchButton.tap()
         
         addUIInterruptionMonitor(withDescription: "error_insert_repository".localized()) { (alert) -> Bool in
-          alert.buttons["Ok"].tap()
+          alert.buttons["ok".localized()].tap()
           return true
         }
     }
