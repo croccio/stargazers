@@ -27,6 +27,9 @@ class ImageLoader  {
                 .map { (response: HTTPURLResponse, data: Data) in
                     return UIImage(data: data)
                 }
+                .catch({ error in
+                    Observable.just(UIImage(named: "github"))
+                })
                 .do(onNext: { image in
                     self.cache[stringUrl] = image
                 })

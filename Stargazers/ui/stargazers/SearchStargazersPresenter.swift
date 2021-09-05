@@ -22,6 +22,7 @@ class SearchStargazersError: Error {
 class SearchStargazersPresenter: BasePresenter<SearchStargazersViewModel> {
     
     private var getStargazerPage = 1
+    private var getStargazerLastPage = false
     private let disposeBag = DisposeBag()
     
     required init(viewModel: SearchStargazersViewModel?) {
@@ -35,12 +36,13 @@ class SearchStargazersPresenter: BasePresenter<SearchStargazersViewModel> {
         )
         .subscribe { _ in
             viewModel.stargazers.accept([])
+            self.getStargazerLastPage = false
         }.disposed(by: disposeBag)
     }
     
     public func fetchStargazers(refresh: Bool? = false) -> Disposable? {
         
-        if (viewModel?.loading.value == true) {
+        if (viewModel?.loading.value == true || getStargazerLastPage) {
             return nil
         }
         
@@ -70,6 +72,8 @@ class SearchStargazersPresenter: BasePresenter<SearchStargazersViewModel> {
                 
                 if (newStargazers.count > 0 && newStargazers.count <= PAGINATION) {
                     self.getStargazerPage += 1
+                } else if (newStargazers.count == 0) {
+                    self.getStargazerLastPage = true
                 }
                 
                 self.viewModel?.loading.accept(false)
