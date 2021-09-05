@@ -41,7 +41,7 @@ public enum ServiceType: String {
 public class GitHubApiRequest {
 
     public static func getRequest(service: BaseService) -> URLRequest {
-        let url = URL(string: service.url)!
+        let url = URL(string: service.url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)!
         var request = URLRequest(url: url)
         request.httpMethod = service.type.rawValue
 
