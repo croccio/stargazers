@@ -8,5 +8,9 @@
 "error_general_message" = "General error";
 "error_stargazer_not_saved_exception" = "Cannot cache stargazers";
 "error_stargazer_not_cached_exception" = "No cached data. Please enabled data to load stargazers";
+"error_inser_repository" = "Insert repository name";
+"error_insert_owner" = "Insert owner name";
+
 "alert_title_error" = "Error";
+
 "ok" = "Ok";
