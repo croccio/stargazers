@@ -6,7 +6,7 @@ import Foundation
 import RxSwift
 
 
-protocol GitHubApi {
+public protocol GitHubApi {
 
     func getStargazers(serviceConfig: GitHubApiConfig.StargazersService) -> Observable<GetStargazersSuccess>
     

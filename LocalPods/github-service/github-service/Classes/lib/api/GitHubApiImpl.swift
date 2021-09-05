@@ -6,9 +6,11 @@ import Foundation
 import RxSwift
 import StatusCodes
 
-class GitHubApiImpl: GitHubApi {
+public class GitHubApiImpl: GitHubApi {
     
-    func getStargazers(serviceConfig: GitHubApiConfig.StargazersService) -> Observable<GetStargazersSuccess> {
+    public init() {}
+    
+    public func getStargazers(serviceConfig: GitHubApiConfig.StargazersService) -> Observable<GetStargazersSuccess> {
         return URLSession
             .shared
             .rx

@@ -6,17 +6,17 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class GitHubRepositoryImpl: GitHubRepository {
+public class GitHubRepositoryImpl: GitHubRepository {
     
     private let gitHubRestApi: GitHubApi
     private let gitHubStorage: GitHubStorage
     
-    init (gitHubRestApi: GitHubApi, gitHubStorage: GitHubStorage) {
+    public init (gitHubRestApi: GitHubApi, gitHubStorage: GitHubStorage) {
         self.gitHubRestApi = gitHubRestApi
         self.gitHubStorage = gitHubStorage
     }
     
-    func getStargazers(owner: String, repo: String, page: Int, perPage: Int) -> Observable<Array<Stargazer>> {
+    public func getStargazers(owner: String, repo: String, page: Int, perPage: Int) -> Observable<Array<Stargazer>> {
         return gitHubRestApi
             .getStargazers(serviceConfig: GitHubApiConfig.StargazersService(owner: owner, repo: repo, perPage: perPage, page: page))
             .observe(on: MainScheduler.instance)

@@ -7,11 +7,13 @@ import RxSwift
 import RxCocoa
 import RealmSwift
 
-class GitHubStorageImpl: GitHubStorage {
+public class GitHubStorageImpl: GitHubStorage {
     
     let localStorage = try! Realm()
     
-    func getStargazers(repo: Repo, page: Int, perPage: Int) -> Observable<Array<Stargazer>> {
+    public init() { }
+    
+    public func getStargazers(repo: Repo, page: Int, perPage: Int) -> Observable<Array<Stargazer>> {
         
         let stargazers = Array(localStorage.objects(Stargazer.self).filter { stargazer in
             stargazer.repo?.repo == repo.repo
@@ -28,7 +30,7 @@ class GitHubStorageImpl: GitHubStorage {
         
     }
     
-    func addStargazer(stargazer: Stargazer) -> Observable<Stargazer> {
+    public func addStargazer(stargazer: Stargazer) -> Observable<Stargazer> {
         
         do {
             try localStorage.write {
@@ -48,7 +50,7 @@ class GitHubStorageImpl: GitHubStorage {
         
     }
     
-    func addStargazers(stargazers: Array<Stargazer>) -> Observable<Array<Stargazer>> {
+    public func addStargazers(stargazers: Array<Stargazer>) -> Observable<Array<Stargazer>> {
         do {
             try localStorage.write {
                 localStorage.add(stargazers, update: .modified)

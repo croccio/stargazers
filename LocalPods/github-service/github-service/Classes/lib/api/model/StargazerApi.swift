@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct StargazerApi: Codable, Equatable {
+public struct StargazerApi: Codable, Equatable {
 
     var avatar_url: String?
     var login: String?

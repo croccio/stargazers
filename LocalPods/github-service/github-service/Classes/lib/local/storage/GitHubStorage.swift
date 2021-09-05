@@ -6,7 +6,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol GitHubStorage {
+public protocol GitHubStorage {
     
     func getStargazers(repo: Repo, page: Int, perPage: Int) -> Observable<Array<Stargazer>>
     

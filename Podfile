@@ -9,7 +9,9 @@ target 'Stargazers' do
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
   pod 'RxBiBinding', '0.3.5'
+  pod 'RxBinding', '0.5'
   pod 'ReactiveCocoa', '11.2.1'
+  pod 'TPKeyboardAvoiding', '1.3.5'
   
   # Local Pods
   pod 'github-service', :path => './LocalPods/github-service', :testspecs => ['Tests']

@@ -12,8 +12,8 @@ public class Stargazer: Object {
     
     @Persisted var primaryKey: String?
     
-    @Persisted var avatarUrl: String?
-    @Persisted var login: String?
+    @Persisted public var avatarUrl: String?
+    @Persisted public var login: String?
     @Persisted var repo: Repo?
     
     public override init() {

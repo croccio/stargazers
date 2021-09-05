@@ -7,4 +7,4 @@
 
 import UIKit
 
-typealias GetStargazersSuccess = Array<StargazerApi>
+public typealias GetStargazersSuccess = Array<StargazerApi>
