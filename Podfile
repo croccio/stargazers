@@ -26,6 +26,8 @@ target 'Stargazers' do
 
   target 'StargazersUITests' do
     # Pods for testing
+    pod 'RxBlocking', '6.2.0'
+    pod 'RxTest', '6.2.0'
   end
 
 end

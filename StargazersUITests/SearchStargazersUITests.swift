@@ -8,6 +8,8 @@
 import XCTest
 import MVP
 import Stargazers
+import RxBlocking
+@testable import Stargazers
 
 class SearchStargazersUITests: XCTestCase {
 
@@ -26,6 +28,8 @@ class SearchStargazersUITests: XCTestCase {
         
         let app = XCUIApplication()
         
+        let searchStargazersViewModel: SearchStargazersViewModel = ViewModelProvider.get()
+        
         let ownerTextField = app.textFields[ownerTextFieldCriteria]
         XCTAssert(ownerTextField.exists)
         ownerTextField.tap()
@@ -40,9 +44,11 @@ class SearchStargazersUITests: XCTestCase {
         XCTAssert(searchSearchButton.exists)
         searchSearchButton.tap()
         
-        sleep(5)
+        let _ = searchStargazersViewModel
+            .stargazers
+            .toBlocking()
         
-        XCTAssert(app.tables.staticTexts.count > 0)
+        XCTAssert(app.tables.staticTexts.count == searchStargazersViewModel.stargazers.value.count)
         
     }
     
