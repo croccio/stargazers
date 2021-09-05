@@ -67,7 +67,7 @@ class GitHubStorageTests: XCTestCase {
         
         assert(stargazersPage1 != stargazersPage2, "page queryParams doesn't work correctly")
         assert(stargazersPage1?.count == 3, "page queryParams doesn't work correctly (Page 1)")
-        assert(stargazersPage2?.count == 4, "page queryParams doesn't work correctly (Page 2)")
+        assert(stargazersPage2?.count == 1, "page queryParams doesn't work correctly (Page 2)")
         
     }
     
