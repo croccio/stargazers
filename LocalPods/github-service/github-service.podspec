@@ -33,8 +33,6 @@ Stargazer rest api
 
   s.dependency 'RxSwift', '6.2.0'
   s.dependency 'RxCocoa', '6.2.0'
-  s.dependency 'RxBlocking', '6.2.0'
-  s.dependency 'RxTest', '6.2.0'
   s.dependency 'RealmSwift', '10.12.0'
   s.dependency 'StatusCodes'
 

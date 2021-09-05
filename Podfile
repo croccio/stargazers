@@ -8,9 +8,12 @@ target 'Stargazers' do
   
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
+  pod 'RxBiBinding', '0.3.5'
+  pod 'ReactiveCocoa', '11.2.1'
   
   # Local Pods
-  pod 'github-service', :path => './LocalPods/github-service', :testspecs => ['Tests'] 
+  pod 'github-service', :path => './LocalPods/github-service', :testspecs => ['Tests']
+  pod 'MVP', :path => './LocalPods/MVP'
 
   target 'StargazersTests' do
     inherit! :search_paths

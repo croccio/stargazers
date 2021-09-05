@@ -1,10 +1,8 @@
 PODS:
   - github-service (0.1.0):
     - RealmSwift (= 10.12.0)
-    - RxBlocking (= 6.2.0)
     - RxCocoa (= 6.2.0)
     - RxSwift (= 6.2.0)
-    - RxTest (= 6.2.0)
     - StatusCodes
   - github-service/Tests (0.1.0):
     - RealmSwift (= 10.12.0)
@@ -13,11 +11,18 @@ PODS:
     - RxSwift (= 6.2.0)
     - RxTest (= 6.2.0)
     - StatusCodes
+  - MVP (0.1.0)
+  - ReactiveCocoa (11.2.1):
+    - ReactiveSwift (~> 6.6)
+  - ReactiveSwift (6.7.0)
   - Realm (10.12.0):
     - Realm/Headers (= 10.12.0)
   - Realm/Headers (10.12.0)
   - RealmSwift (10.12.0):
     - Realm (= 10.12.0)
+  - RxBiBinding (0.3.5):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - RxBlocking (6.2.0):
     - RxSwift (= 6.2.0)
   - RxCocoa (6.2.0):
@@ -33,6 +38,9 @@ PODS:
 DEPENDENCIES:
   - github-service (from `./LocalPods/github-service`)
   - github-service/Tests (from `./LocalPods/github-service`)
+  - MVP (from `./LocalPods/MVP`)
+  - ReactiveCocoa (= 11.2.1)
+  - RxBiBinding (= 0.3.5)
   - RxBlocking (= 6.2.0)
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
@@ -40,8 +48,11 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - ReactiveCocoa
+    - ReactiveSwift
     - Realm
     - RealmSwift
+    - RxBiBinding
     - RxBlocking
     - RxCocoa
     - RxRelay
@@ -52,11 +63,17 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   github-service:
     :path: "./LocalPods/github-service"
+  MVP:
+    :path: "./LocalPods/MVP"
 
 SPEC CHECKSUMS:
-  github-service: d7943ab36feeb127275d532f6c6a9055720d4d61
+  github-service: b74c32eaf1a93559f4481b161bfa21c12f4a40cd
+  MVP: b2b9ae61bfd67f75c5e06d19fd66767742b6a32c
+  ReactiveCocoa: 194289e7069037d40c59cb4ae9230f4b1ec05fa8
+  ReactiveSwift: 208201d6ecc9734196d147aa76bc1f24b1b821fe
   Realm: 32488213acb44660539c619d620cec1bac046166
   RealmSwift: 0abdca6231d5ff8a4f84cef9c1121ef95a483faf
+  RxBiBinding: c4de0aad6ee668fa73ea6ba423bc0ab5d77b986b
   RxBlocking: 0b29f7d2079109a8de49c411381bed7c33ef1eeb
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
@@ -64,6 +81,6 @@ SPEC CHECKSUMS:
   RxTest: 0c692fa672b694373ba86d2b00033595297a2831
   StatusCodes: d4535c2edcee7533b2b32aeefa7bb58d92f28176
 
-PODFILE CHECKSUM: bb21c3e0b1c49f6017fdf3fb9637e17ddacc9e03
+PODFILE CHECKSUM: 2d4f0768fb60b49cd449f6bd0999f9a44a525801
 
 COCOAPODS: 1.11.0
