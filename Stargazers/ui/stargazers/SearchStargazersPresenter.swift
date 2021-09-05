@@ -22,6 +22,21 @@ class SearchStargazersError: Error {
 class SearchStargazersPresenter: BasePresenter<SearchStargazersViewModel> {
     
     private var getStargazerPage = 1
+    private let disposeBag = DisposeBag()
+    
+    required init(viewModel: SearchStargazersViewModel?) {
+        super.init(viewModel: viewModel)
+        
+        guard let viewModel = viewModel else { return }
+        
+        Observable.combineLatest(
+            viewModel.owner.distinctUntilChanged(),
+            viewModel.repository.distinctUntilChanged()
+        )
+        .subscribe { _ in
+            viewModel.stargazers.accept([])
+        }.disposed(by: disposeBag)
+    }
     
     public func fetchStargazers(refresh: Bool? = false) -> Disposable? {
         
@@ -29,13 +44,13 @@ class SearchStargazersPresenter: BasePresenter<SearchStargazersViewModel> {
             return nil
         }
         
-        guard let owner = viewModel?.owner.value else {
-            viewModel?.error?(SearchStargazersError(message: "Insert owner"))
+        guard let owner = viewModel?.owner.value, owner.count > 0 else {
+            viewModel?.error?(SearchStargazersError(message: "error_insert_owner"))
             return nil
         }
         
-        guard let repository = viewModel?.repository.value else {
-            viewModel?.error?(SearchStargazersError(message: "Insert repository"))
+        guard let repository = viewModel?.repository.value, repository.count > 0 else {
+            viewModel?.error?(SearchStargazersError(message: "error_inser_repository"))
             return nil
         }
         
