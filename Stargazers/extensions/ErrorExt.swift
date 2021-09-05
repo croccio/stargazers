@@ -20,6 +20,8 @@ extension Error {
             return "error_stargazer_not_saved_exception".localized()
         } else if let _ = self as? NotCachedStargazerException {
             return "error_stargazer_not_cached_exception".localized()
+        } else if let error = self as? SearchStargazersError {
+            return error.message
         } else {
             return localizedDescription
         }
